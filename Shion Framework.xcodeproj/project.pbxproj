@@ -1,0 +1,1212 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		380BE4DC1275F9DB0083E78C /* ASCM17AController.h in Headers */ = {isa = PBXBuildFile; fileRef = 380BE4DA1275F9DB0083E78C /* ASCM17AController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		380BE4DD1275F9DB0083E78C /* ASCM17AController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380BE4DB1275F9DB0083E78C /* ASCM17AController.m */; };
+		380C0E1012ECDFAC00752A96 /* ASSmartLincDirectController.h in Headers */ = {isa = PBXBuildFile; fileRef = 380C0E0E12ECDFAC00752A96 /* ASSmartLincDirectController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		380C0E1112ECDFAC00752A96 /* ASSmartLincDirectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380C0E0F12ECDFAC00752A96 /* ASSmartLincDirectController.m */; };
+		382618FE0EEED8DD00E78669 /* ASAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 382618FC0EEED8DD00E78669 /* ASAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382618FF0EEED8DD00E78669 /* ASAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 382618FD0EEED8DD00E78669 /* ASAddress.m */; };
+		382619120EEEDE8600E78669 /* ASToggleDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 382619100EEEDE8600E78669 /* ASToggleDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382619130EEEDE8600E78669 /* ASToggleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 382619110EEEDE8600E78669 /* ASToggleDevice.m */; };
+		382619160EEEDE9C00E78669 /* ASContinuousDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 382619140EEEDE9C00E78669 /* ASContinuousDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382619170EEEDE9C00E78669 /* ASContinuousDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 382619150EEEDE9C00E78669 /* ASContinuousDevice.m */; };
+		382619630EEEE01C00E78669 /* ASDeviceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 382619610EEEE01C00E78669 /* ASDeviceController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382619640EEEE01C00E78669 /* ASDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382619620EEEE01C00E78669 /* ASDeviceController.m */; };
+		382619680EEEEA4F00E78669 /* ASCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 382619660EEEEA4F00E78669 /* ASCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382619690EEEEA4F00E78669 /* ASCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 382619670EEEEA4F00E78669 /* ASCommand.m */; };
+		382619B40EEEEDBB00E78669 /* ASVirtualDevicesTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 382619B20EEEEDBB00E78669 /* ASVirtualDevicesTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382619C40EEEF08A00E78669 /* ASVirtualDeviceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 382619C20EEEF08A00E78669 /* ASVirtualDeviceController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382619C50EEEF08A00E78669 /* ASVirtualDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382619C30EEEF08A00E78669 /* ASVirtualDeviceController.m */; };
+		38261A760EEEF85300E78669 /* ASVirtualDevicesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 382619B30EEEEDBB00E78669 /* ASVirtualDevicesTest.m */; };
+		38261A970EEEFA4B00E78669 /* ASVirtualAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261A950EEEFA4B00E78669 /* ASVirtualAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261A980EEEFA4B00E78669 /* ASVirtualAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261A960EEEFA4B00E78669 /* ASVirtualAddress.m */; };
+		38261AFC0EEF009300E78669 /* ASStatusCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261AFA0EEF009300E78669 /* ASStatusCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261AFD0EEF009300E78669 /* ASStatusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261AFB0EEF009300E78669 /* ASStatusCommand.m */; };
+		38261B000EEF00A100E78669 /* ASActivateCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261AFE0EEF00A100E78669 /* ASActivateCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261B010EEF00A100E78669 /* ASActivateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261AFF0EEF00A100E78669 /* ASActivateCommand.m */; };
+		38261B040EEF00AF00E78669 /* ASDeactivateCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261B020EEF00AF00E78669 /* ASDeactivateCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261B050EEF00AF00E78669 /* ASDeactivateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261B030EEF00AF00E78669 /* ASDeactivateCommand.m */; };
+		38261B080EEF00C400E78669 /* ASIncreaseCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261B060EEF00C400E78669 /* ASIncreaseCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261B090EEF00C400E78669 /* ASIncreaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261B070EEF00C400E78669 /* ASIncreaseCommand.m */; };
+		38261B0C0EEF00D100E78669 /* ASDecreaseCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261B0A0EEF00D100E78669 /* ASDecreaseCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261B0D0EEF00D100E78669 /* ASDecreaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261B0B0EEF00D100E78669 /* ASDecreaseCommand.m */; };
+		38261B100EEF00E500E78669 /* ASSetLevelCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261B0E0EEF00E500E78669 /* ASSetLevelCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261B110EEF00E500E78669 /* ASSetLevelCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261B0F0EEF00E500E78669 /* ASSetLevelCommand.m */; };
+		38261B1B0EEF01A400E78669 /* Shion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Shion.framework */; };
+		38261B280EEF044200E78669 /* ASCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261B270EEF044200E78669 /* ASCommands.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261C170EEF1E8100E78669 /* ASPowerLinc2414Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261C150EEF1E8100E78669 /* ASPowerLinc2414Controller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261C180EEF1E8100E78669 /* ASPowerLinc2414Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261C160EEF1E8100E78669 /* ASPowerLinc2414Controller.m */; };
+		38261C1B0EEF1EAA00E78669 /* ASInsteonAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261C190EEF1EAA00E78669 /* ASInsteonAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261D170EEF2DD500E78669 /* ASInsteonTransmitCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38261D150EEF2DD500E78669 /* ASInsteonTransmitCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38261D180EEF2DD500E78669 /* ASInsteonTransmitCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261D160EEF2DD500E78669 /* ASInsteonTransmitCommand.m */; };
+		38261D750EEF37F800E78669 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38261D720EEF37F800E78669 /* Carbon.framework */; };
+		38261D760EEF37F800E78669 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38261D730EEF37F800E78669 /* IOKit.framework */; };
+		38261D770EEF37F800E78669 /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38261D740EEF37F800E78669 /* System.framework */; };
+		382DC39A101B879C001E6A7A /* ASChimeDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 382DC398101B879C001E6A7A /* ASChimeDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382DC39B101B879C001E6A7A /* ASChimeDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DC399101B879C001E6A7A /* ASChimeDevice.m */; };
+		382DC39F101B87CA001E6A7A /* ASChimeCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 382DC39D101B87CA001E6A7A /* ASChimeCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382DC3A0101B87CA001E6A7A /* ASChimeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DC39E101B87CA001E6A7A /* ASChimeCommand.m */; };
+		382DC6AE101CC19C001E6A7A /* ASMotionDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 382DC6AC101CC19C001E6A7A /* ASMotionDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382DC6AF101CC19C001E6A7A /* ASMotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DC6AD101CC19C001E6A7A /* ASMotionDetector.m */; };
+		3830AB72113081860022B652 /* ASPowerLincController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3830AB70113081860022B652 /* ASPowerLincController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3830AB73113081860022B652 /* ASPowerLincController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830AB71113081860022B652 /* ASPowerLincController.m */; };
+		38322E950F0AAFF800D72D6A /* ASGetCoolPointCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38322E930F0AAFF800D72D6A /* ASGetCoolPointCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38322E960F0AAFF800D72D6A /* ASGetCoolPointCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38322E940F0AAFF800D72D6A /* ASGetCoolPointCommand.m */; };
+		38322E990F0AB00400D72D6A /* ASGetHeatPointCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38322E970F0AB00400D72D6A /* ASGetHeatPointCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38322E9A0F0AB00400D72D6A /* ASGetHeatPointCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38322E980F0AB00400D72D6A /* ASGetHeatPointCommand.m */; };
+		383232B70F0D51DA00D72D6A /* ASCM15AUSBController.h in Headers */ = {isa = PBXBuildFile; fileRef = 383232B50F0D51DA00D72D6A /* ASCM15AUSBController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383232B80F0D51DA00D72D6A /* ASCM15AUSBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383232B60F0D51DA00D72D6A /* ASCM15AUSBController.m */; };
+		38397E73111B31E000728CCA /* ASSmartLincWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 38397E71111B31E000728CCA /* ASSmartLincWebController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38397E74111B31E000728CCA /* ASSmartLincWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38397E72111B31E000728CCA /* ASSmartLincWebController.m */; };
+		38398019111C71C500728CCA /* ASSprinklerValveStatusCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38398017111C71C500728CCA /* ASSprinklerValveStatusCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3839801A111C71C500728CCA /* ASSprinklerValveStatusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38398018111C71C500728CCA /* ASSprinklerValveStatusCommand.m */; };
+		3839802E111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 3839802C111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3839802F111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839802D111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.m */; };
+		383980D2111C98E800728CCA /* ASSprinklerSetConfigurationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 383980D0111C98E800728CCA /* ASSprinklerSetConfigurationCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383980D3111C98E800728CCA /* ASSprinklerSetConfigurationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 383980D1111C98E800728CCA /* ASSprinklerSetConfigurationCommand.m */; };
+		383980DA111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 383980D8111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383980DB111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 383980D9111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.m */; };
+		383980E0111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 383980DE111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383980E1111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 383980DF111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.m */; };
+		383980E4111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 383980E2111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383980E5111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 383980E3111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.m */; };
+		383F5329103C866800A26A9A /* ASSetRampRateCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 383F5327103C866800A26A9A /* ASSetRampRateCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383F532A103C866800A26A9A /* ASSetRampRateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F5328103C866800A26A9A /* ASSetRampRateCommand.m */; };
+		383F532D103C894100A26A9A /* ASGetRampRateCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 383F532B103C894100A26A9A /* ASGetRampRateCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383F532E103C894100A26A9A /* ASGetRampRateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F532C103C894100A26A9A /* ASGetRampRateCommand.m */; };
+		384A4BC414409B8200F9CB6B /* ASGarageHawkClose.h in Headers */ = {isa = PBXBuildFile; fileRef = 384A4BC214409B8200F9CB6B /* ASGarageHawkClose.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		384A4BC514409B8200F9CB6B /* ASGarageHawkClose.m in Sources */ = {isa = PBXBuildFile; fileRef = 384A4BC314409B8200F9CB6B /* ASGarageHawkClose.m */; };
+		384A4BCA14409CCC00F9CB6B /* ASGarageHawkDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 384A4BC814409CCC00F9CB6B /* ASGarageHawkDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		384A4BCB14409CCC00F9CB6B /* ASGarageHawkDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 384A4BC914409CCC00F9CB6B /* ASGarageHawkDevice.m */; };
+		38699500112F2886005D0050 /* ASPowerLinc2412Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 386994FE112F2886005D0050 /* ASPowerLinc2412Controller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38699501112F2886005D0050 /* ASPowerLinc2412Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 386994FF112F2886005D0050 /* ASPowerLinc2412Controller.m */; };
+		387BFE2D0EF962300035581F /* ASThermostatDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 387BFE2B0EF962300035581F /* ASThermostatDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		387BFE2E0EF962300035581F /* ASThermostatDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 387BFE2C0EF962300035581F /* ASThermostatDevice.m */; };
+		38831B280EEED76F006561A2 /* ASDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 38831B260EEED76F006561A2 /* ASDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38831B290EEED76F006561A2 /* ASDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 38831B270EEED76F006561A2 /* ASDevice.m */; };
+		388D2BBA0FBF257B004C5CFB /* ASActivateFanCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 388D2BB80FBF257B004C5CFB /* ASActivateFanCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		388D2BBB0FBF257B004C5CFB /* ASActivateFanCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 388D2BB90FBF257B004C5CFB /* ASActivateFanCommand.m */; };
+		388D2BBE0FBF258A004C5CFB /* ASDeactivateFanCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 388D2BBC0FBF258A004C5CFB /* ASDeactivateFanCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		388D2BBF0FBF258A004C5CFB /* ASDeactivateFanCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 388D2BBD0FBF258A004C5CFB /* ASDeactivateFanCommand.m */; };
+		388EEC530F40BCDE0009CC7B /* ShionLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 388EEC510F40BCDE0009CC7B /* ShionLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		388EEC540F40BCDE0009CC7B /* ShionLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 388EEC520F40BCDE0009CC7B /* ShionLog.m */; };
+		3890C80513C2948C00ECC913 /* ASPowerMeterDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 3890C80313C2948C00ECC913 /* ASPowerMeterDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3890C80613C2948C00ECC913 /* ASPowerMeterDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890C80413C2948C00ECC913 /* ASPowerMeterDevice.m */; };
+		3890C99113C2C35000ECC913 /* ASResetPowerMeterCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 3890C98F13C2C35000ECC913 /* ASResetPowerMeterCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3890C99213C2C35000ECC913 /* ASResetPowerMeterCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890C99013C2C35000ECC913 /* ASResetPowerMeterCommand.m */; };
+		3890CA7213C5471100ECC913 /* ASLockDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 3890CA7013C5471100ECC913 /* ASLockDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3890CA7313C5471100ECC913 /* ASLockDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890CA7113C5471100ECC913 /* ASLockDevice.m */; };
+		3890CA7813C5474900ECC913 /* ASLockCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 3890CA7613C5474900ECC913 /* ASLockCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3890CA7913C5474900ECC913 /* ASLockCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890CA7713C5474900ECC913 /* ASLockCommand.m */; };
+		3890CA7C13C5475F00ECC913 /* ASUnlockCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 3890CA7A13C5475F00ECC913 /* ASUnlockCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3890CA7D13C5475F00ECC913 /* ASUnlockCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890CA7B13C5475F00ECC913 /* ASUnlockCommand.m */; };
+		38934A700F2509EA005EACDC /* ASGetInfoCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38934A6E0F2509EA005EACDC /* ASGetInfoCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38934A710F2509EA005EACDC /* ASGetInfoCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38934A6F0F2509EA005EACDC /* ASGetInfoCommand.m */; };
+		38A0195C0F0E68F400CEADED /* ASCM11AController.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A0195A0F0E68F400CEADED /* ASCM11AController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A0195D0F0E68F400CEADED /* ASCM11AController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A0195B0F0E68F400CEADED /* ASCM11AController.m */; };
+		38AD2B44116437480043AE7E /* ASX10Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 38AD2B42116437480043AE7E /* ASX10Controller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38AD2B45116437480043AE7E /* ASX10Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AD2B43116437480043AE7E /* ASX10Controller.m */; };
+		38AD2D061166F5440043AE7E /* ASPowerLinc1132Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 38AD2D041166F5440043AE7E /* ASPowerLinc1132Controller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38AD2D071166F5440043AE7E /* ASPowerLinc1132Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AD2D051166F5440043AE7E /* ASPowerLinc1132Controller.m */; };
+		38B5B5F71056D85000E00E4C /* ASHouseDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B5B5F51056D85000E00E4C /* ASHouseDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B5B5F81056D85000E00E4C /* ASHouseDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5B5F61056D85000E00E4C /* ASHouseDevice.m */; };
+		38B5B60C1056D98B00E00E4C /* ASAllOffCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B5B60A1056D98B00E00E4C /* ASAllOffCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B5B60D1056D98B00E00E4C /* ASAllOffCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5B60B1056D98B00E00E4C /* ASAllOffCommand.m */; };
+		38B5B6101056D99C00E00E4C /* ASAllLightsOffCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B5B60E1056D99C00E00E4C /* ASAllLightsOffCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B5B6111056D99C00E00E4C /* ASAllLightsOffCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5B60F1056D99C00E00E4C /* ASAllLightsOffCommand.m */; };
+		38B5B6141056D9A800E00E4C /* ASAllLightsOnCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B5B6121056D9A800E00E4C /* ASAllLightsOnCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B5B6151056D9A800E00E4C /* ASAllLightsOnCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5B6131056D9A800E00E4C /* ASAllLightsOnCommand.m */; };
+		38BF520810BB316600AD1DA7 /* ASSprinklerDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BF520610BB316600AD1DA7 /* ASSprinklerDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38BF520910BB316600AD1DA7 /* ASSprinklerDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF520710BB316600AD1DA7 /* ASSprinklerDevice.m */; };
+		38BF522D10BB32B200AD1DA7 /* ASSprinklerOnCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BF522B10BB32B200AD1DA7 /* ASSprinklerOnCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38BF522E10BB32B200AD1DA7 /* ASSprinklerOnCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF522C10BB32B200AD1DA7 /* ASSprinklerOnCommand.m */; };
+		38BF523110BB32F900AD1DA7 /* ASSprinklerOffCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BF522F10BB32F900AD1DA7 /* ASSprinklerOffCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38BF523210BB32F900AD1DA7 /* ASSprinklerOffCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF523010BB32F900AD1DA7 /* ASSprinklerOffCommand.m */; };
+		38C3ADA91129E47D00AD4574 /* ASEzSrveWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 38C3ADA71129E47D00AD4574 /* ASEzSrveWebController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C3ADAA1129E47E00AD4574 /* ASEzSrveWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C3ADA81129E47D00AD4574 /* ASEzSrveWebController.m */; };
+		38C88A42111CFCA7003A67CE /* ASSerialPortModemDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 38C88A40111CFCA7003A67CE /* ASSerialPortModemDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C88A43111CFCA7003A67CE /* ASSerialPortModemDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C88A41111CFCA7003A67CE /* ASSerialPortModemDevice.m */; };
+		38C88A47111CFCE2003A67CE /* ASSerialPortAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 38C88A45111CFCE2003A67CE /* ASSerialPortAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C88A48111CFCE2003A67CE /* ASSerialPortAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C88A46111CFCE2003A67CE /* ASSerialPortAddress.m */; };
+		38CA729E105443E5004DE49F /* ASEnableStatusCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CA729C105443E5004DE49F /* ASEnableStatusCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38CA729F105443E5004DE49F /* ASEnableStatusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA729D105443E5004DE49F /* ASEnableStatusCommand.m */; };
+		38CA72A210544416004DE49F /* ASDisableStatusCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CA72A010544416004DE49F /* ASDisableStatusCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38CA72A310544416004DE49F /* ASDisableStatusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA72A110544416004DE49F /* ASDisableStatusCommand.m */; };
+		38DDEED20EFAF311006556FF /* ASGetTemperatureCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDEED00EFAF311006556FF /* ASGetTemperatureCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DDEED30EFAF311006556FF /* ASGetTemperatureCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DDEED10EFAF311006556FF /* ASGetTemperatureCommand.m */; };
+		38DDEED60EFAF34A006556FF /* ASGetThermostatModeCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDEED40EFAF34A006556FF /* ASGetThermostatModeCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DDEED70EFAF34A006556FF /* ASGetThermostatModeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DDEED50EFAF34A006556FF /* ASGetThermostatModeCommand.m */; };
+		38DDEEDA0EFAF379006556FF /* ASSetThermostatModeCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDEED80EFAF379006556FF /* ASSetThermostatModeCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DDEEDB0EFAF379006556FF /* ASSetThermostatModeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DDEED90EFAF379006556FF /* ASSetThermostatModeCommand.m */; };
+		38DDEEE60EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDEEE40EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DDEEE70EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DDEEE50EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.m */; };
+		38DDEEEA0EFAF41B006556FF /* ASSetCoolPointCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDEEE80EFAF41B006556FF /* ASSetCoolPointCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DDEEEB0EFAF41B006556FF /* ASSetCoolPointCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DDEEE90EFAF41B006556FF /* ASSetCoolPointCommand.m */; };
+		38DDEEEE0EFAF42E006556FF /* ASSetHeatPointCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDEEEC0EFAF42E006556FF /* ASSetHeatPointCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DDEEEF0EFAF42E006556FF /* ASSetHeatPointCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DDEEED0EFAF42E006556FF /* ASSetHeatPointCommand.m */; };
+		38DDF1480EFB0D2F006556FF /* ASGetThermostatState.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDF1460EFB0D2F006556FF /* ASGetThermostatState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DDF1490EFB0D2F006556FF /* ASGetThermostatState.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DDF1470EFB0D2F006556FF /* ASGetThermostatState.m */; };
+		38FFC38D0EF2C9A5006F17B5 /* ASInsteonDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FFC38B0EF2C9A5006F17B5 /* ASInsteonDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38FFC38E0EF2C9A5006F17B5 /* ASInsteonDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FFC38C0EF2C9A5006F17B5 /* ASInsteonDatabase.m */; };
+		38FFC4E70EF31183006F17B5 /* ASX10Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FFC4E50EF31183006F17B5 /* ASX10Address.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38FFC4E80EF31183006F17B5 /* ASX10Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FFC4E60EF31183006F17B5 /* ASX10Address.m */; };
+		38FFC4EF0EF3139A006F17B5 /* ASInsteonAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 38261C1A0EEF1EAA00E78669 /* ASInsteonAddress.m */; };
+		38FFC53D0EF31733006F17B5 /* ASAggregateCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FFC53B0EF31733006F17B5 /* ASAggregateCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38FFC53E0EF31733006F17B5 /* ASAggregateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FFC53C0EF31733006F17B5 /* ASAggregateCommand.m */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		382619A10EEEECAA00E78669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = "Shion Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* Shion Framework_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shion Framework_Prefix.pch"; sourceTree = "<group>"; };
+		380BE4DA1275F9DB0083E78C /* ASCM17AController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCM17AController.h; sourceTree = "<group>"; };
+		380BE4DB1275F9DB0083E78C /* ASCM17AController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCM17AController.m; sourceTree = "<group>"; };
+		380C0E0E12ECDFAC00752A96 /* ASSmartLincDirectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSmartLincDirectController.h; sourceTree = "<group>"; };
+		380C0E0F12ECDFAC00752A96 /* ASSmartLincDirectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSmartLincDirectController.m; sourceTree = "<group>"; };
+		382618FC0EEED8DD00E78669 /* ASAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAddress.h; sourceTree = "<group>"; };
+		382618FD0EEED8DD00E78669 /* ASAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAddress.m; sourceTree = "<group>"; };
+		382619100EEEDE8600E78669 /* ASToggleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASToggleDevice.h; sourceTree = "<group>"; };
+		382619110EEEDE8600E78669 /* ASToggleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASToggleDevice.m; sourceTree = "<group>"; };
+		382619140EEEDE9C00E78669 /* ASContinuousDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASContinuousDevice.h; sourceTree = "<group>"; };
+		382619150EEEDE9C00E78669 /* ASContinuousDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASContinuousDevice.m; sourceTree = "<group>"; };
+		382619610EEEE01C00E78669 /* ASDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDeviceController.h; sourceTree = "<group>"; };
+		382619620EEEE01C00E78669 /* ASDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDeviceController.m; sourceTree = "<group>"; };
+		382619660EEEEA4F00E78669 /* ASCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommand.h; sourceTree = "<group>"; };
+		382619670EEEEA4F00E78669 /* ASCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCommand.m; sourceTree = "<group>"; };
+		3826199C0EEEEC9800E78669 /* ShionUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShionUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3826199D0EEEEC9800E78669 /* ShionUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShionUnitTests-Info.plist"; sourceTree = "<group>"; };
+		382619B20EEEEDBB00E78669 /* ASVirtualDevicesTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASVirtualDevicesTest.h; sourceTree = "<group>"; };
+		382619B30EEEEDBB00E78669 /* ASVirtualDevicesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASVirtualDevicesTest.m; sourceTree = "<group>"; };
+		382619C20EEEF08A00E78669 /* ASVirtualDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASVirtualDeviceController.h; sourceTree = "<group>"; };
+		382619C30EEEF08A00E78669 /* ASVirtualDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASVirtualDeviceController.m; sourceTree = "<group>"; };
+		382619CD0EEEF11200E78669 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = System/Library/Frameworks/SenTestingKit.framework; sourceTree = SDKROOT; };
+		38261A950EEEFA4B00E78669 /* ASVirtualAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASVirtualAddress.h; sourceTree = "<group>"; };
+		38261A960EEEFA4B00E78669 /* ASVirtualAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASVirtualAddress.m; sourceTree = "<group>"; };
+		38261AFA0EEF009300E78669 /* ASStatusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStatusCommand.h; sourceTree = "<group>"; };
+		38261AFB0EEF009300E78669 /* ASStatusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStatusCommand.m; sourceTree = "<group>"; };
+		38261AFE0EEF00A100E78669 /* ASActivateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASActivateCommand.h; sourceTree = "<group>"; };
+		38261AFF0EEF00A100E78669 /* ASActivateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASActivateCommand.m; sourceTree = "<group>"; };
+		38261B020EEF00AF00E78669 /* ASDeactivateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDeactivateCommand.h; sourceTree = "<group>"; };
+		38261B030EEF00AF00E78669 /* ASDeactivateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDeactivateCommand.m; sourceTree = "<group>"; };
+		38261B060EEF00C400E78669 /* ASIncreaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIncreaseCommand.h; sourceTree = "<group>"; };
+		38261B070EEF00C400E78669 /* ASIncreaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIncreaseCommand.m; sourceTree = "<group>"; };
+		38261B0A0EEF00D100E78669 /* ASDecreaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDecreaseCommand.h; sourceTree = "<group>"; };
+		38261B0B0EEF00D100E78669 /* ASDecreaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDecreaseCommand.m; sourceTree = "<group>"; };
+		38261B0E0EEF00E500E78669 /* ASSetLevelCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSetLevelCommand.h; sourceTree = "<group>"; };
+		38261B0F0EEF00E500E78669 /* ASSetLevelCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSetLevelCommand.m; sourceTree = "<group>"; };
+		38261B270EEF044200E78669 /* ASCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommands.h; sourceTree = "<group>"; };
+		38261C150EEF1E8100E78669 /* ASPowerLinc2414Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPowerLinc2414Controller.h; sourceTree = "<group>"; };
+		38261C160EEF1E8100E78669 /* ASPowerLinc2414Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPowerLinc2414Controller.m; sourceTree = "<group>"; };
+		38261C190EEF1EAA00E78669 /* ASInsteonAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASInsteonAddress.h; sourceTree = "<group>"; };
+		38261C1A0EEF1EAA00E78669 /* ASInsteonAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASInsteonAddress.m; sourceTree = "<group>"; };
+		38261D150EEF2DD500E78669 /* ASInsteonTransmitCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASInsteonTransmitCommand.h; sourceTree = "<group>"; };
+		38261D160EEF2DD500E78669 /* ASInsteonTransmitCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASInsteonTransmitCommand.m; sourceTree = "<group>"; };
+		38261D720EEF37F800E78669 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		38261D730EEF37F800E78669 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		38261D740EEF37F800E78669 /* System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = System.framework; path = System/Library/Frameworks/System.framework; sourceTree = SDKROOT; };
+		382DC398101B879C001E6A7A /* ASChimeDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASChimeDevice.h; sourceTree = "<group>"; };
+		382DC399101B879C001E6A7A /* ASChimeDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASChimeDevice.m; sourceTree = "<group>"; };
+		382DC39D101B87CA001E6A7A /* ASChimeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASChimeCommand.h; sourceTree = "<group>"; };
+		382DC39E101B87CA001E6A7A /* ASChimeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASChimeCommand.m; sourceTree = "<group>"; };
+		382DC6AC101CC19C001E6A7A /* ASMotionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMotionDetector.h; sourceTree = "<group>"; };
+		382DC6AD101CC19C001E6A7A /* ASMotionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMotionDetector.m; sourceTree = "<group>"; };
+		3830AB70113081860022B652 /* ASPowerLincController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPowerLincController.h; sourceTree = "<group>"; };
+		3830AB71113081860022B652 /* ASPowerLincController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPowerLincController.m; sourceTree = "<group>"; };
+		38322E930F0AAFF800D72D6A /* ASGetCoolPointCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGetCoolPointCommand.h; sourceTree = "<group>"; };
+		38322E940F0AAFF800D72D6A /* ASGetCoolPointCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGetCoolPointCommand.m; sourceTree = "<group>"; };
+		38322E970F0AB00400D72D6A /* ASGetHeatPointCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGetHeatPointCommand.h; sourceTree = "<group>"; };
+		38322E980F0AB00400D72D6A /* ASGetHeatPointCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGetHeatPointCommand.m; sourceTree = "<group>"; };
+		383232B50F0D51DA00D72D6A /* ASCM15AUSBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCM15AUSBController.h; sourceTree = "<group>"; };
+		383232B60F0D51DA00D72D6A /* ASCM15AUSBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCM15AUSBController.m; sourceTree = "<group>"; };
+		38397E71111B31E000728CCA /* ASSmartLincWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSmartLincWebController.h; sourceTree = "<group>"; };
+		38397E72111B31E000728CCA /* ASSmartLincWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSmartLincWebController.m; sourceTree = "<group>"; };
+		38398017111C71C500728CCA /* ASSprinklerValveStatusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerValveStatusCommand.h; sourceTree = "<group>"; };
+		38398018111C71C500728CCA /* ASSprinklerValveStatusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerValveStatusCommand.m; sourceTree = "<group>"; };
+		3839802C111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerFetchConfigurationCommand.h; sourceTree = "<group>"; };
+		3839802D111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerFetchConfigurationCommand.m; sourceTree = "<group>"; };
+		383980D0111C98E800728CCA /* ASSprinklerSetConfigurationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerSetConfigurationCommand.h; sourceTree = "<group>"; };
+		383980D1111C98E800728CCA /* ASSprinklerSetConfigurationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerSetConfigurationCommand.m; sourceTree = "<group>"; };
+		383980D8111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerSetDiagnosticsConfiguration.h; sourceTree = "<group>"; };
+		383980D9111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerSetDiagnosticsConfiguration.m; sourceTree = "<group>"; };
+		383980DE111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerSetPumpConfigurationCommand.h; sourceTree = "<group>"; };
+		383980DF111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerSetPumpConfigurationCommand.m; sourceTree = "<group>"; };
+		383980E2111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerSetRainSensorConfigurationCommand.h; sourceTree = "<group>"; };
+		383980E3111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerSetRainSensorConfigurationCommand.m; sourceTree = "<group>"; };
+		383F5327103C866800A26A9A /* ASSetRampRateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSetRampRateCommand.h; sourceTree = "<group>"; };
+		383F5328103C866800A26A9A /* ASSetRampRateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSetRampRateCommand.m; sourceTree = "<group>"; };
+		383F532B103C894100A26A9A /* ASGetRampRateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGetRampRateCommand.h; sourceTree = "<group>"; };
+		383F532C103C894100A26A9A /* ASGetRampRateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGetRampRateCommand.m; sourceTree = "<group>"; };
+		384A4BC214409B8200F9CB6B /* ASGarageHawkClose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGarageHawkClose.h; sourceTree = "<group>"; };
+		384A4BC314409B8200F9CB6B /* ASGarageHawkClose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGarageHawkClose.m; sourceTree = "<group>"; };
+		384A4BC814409CCC00F9CB6B /* ASGarageHawkDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGarageHawkDevice.h; sourceTree = "<group>"; };
+		384A4BC914409CCC00F9CB6B /* ASGarageHawkDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGarageHawkDevice.m; sourceTree = "<group>"; };
+		386994FE112F2886005D0050 /* ASPowerLinc2412Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPowerLinc2412Controller.h; sourceTree = "<group>"; };
+		386994FF112F2886005D0050 /* ASPowerLinc2412Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPowerLinc2412Controller.m; sourceTree = "<group>"; };
+		387BFE2B0EF962300035581F /* ASThermostatDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASThermostatDevice.h; sourceTree = "<group>"; };
+		387BFE2C0EF962300035581F /* ASThermostatDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASThermostatDevice.m; sourceTree = "<group>"; };
+		38831B260EEED76F006561A2 /* ASDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDevice.h; sourceTree = "<group>"; };
+		38831B270EEED76F006561A2 /* ASDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDevice.m; sourceTree = "<group>"; };
+		388D2BB80FBF257B004C5CFB /* ASActivateFanCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASActivateFanCommand.h; sourceTree = "<group>"; };
+		388D2BB90FBF257B004C5CFB /* ASActivateFanCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASActivateFanCommand.m; sourceTree = "<group>"; };
+		388D2BBC0FBF258A004C5CFB /* ASDeactivateFanCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDeactivateFanCommand.h; sourceTree = "<group>"; };
+		388D2BBD0FBF258A004C5CFB /* ASDeactivateFanCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDeactivateFanCommand.m; sourceTree = "<group>"; };
+		388EEC510F40BCDE0009CC7B /* ShionLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShionLog.h; sourceTree = "<group>"; };
+		388EEC520F40BCDE0009CC7B /* ShionLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShionLog.m; sourceTree = "<group>"; };
+		3890C80313C2948C00ECC913 /* ASPowerMeterDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPowerMeterDevice.h; sourceTree = "<group>"; };
+		3890C80413C2948C00ECC913 /* ASPowerMeterDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPowerMeterDevice.m; sourceTree = "<group>"; };
+		3890C98F13C2C35000ECC913 /* ASResetPowerMeterCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASResetPowerMeterCommand.h; sourceTree = "<group>"; };
+		3890C99013C2C35000ECC913 /* ASResetPowerMeterCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASResetPowerMeterCommand.m; sourceTree = "<group>"; };
+		3890CA7013C5471100ECC913 /* ASLockDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLockDevice.h; sourceTree = "<group>"; };
+		3890CA7113C5471100ECC913 /* ASLockDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLockDevice.m; sourceTree = "<group>"; };
+		3890CA7613C5474900ECC913 /* ASLockCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLockCommand.h; sourceTree = "<group>"; };
+		3890CA7713C5474900ECC913 /* ASLockCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLockCommand.m; sourceTree = "<group>"; };
+		3890CA7A13C5475F00ECC913 /* ASUnlockCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUnlockCommand.h; sourceTree = "<group>"; };
+		3890CA7B13C5475F00ECC913 /* ASUnlockCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUnlockCommand.m; sourceTree = "<group>"; };
+		38934A6E0F2509EA005EACDC /* ASGetInfoCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGetInfoCommand.h; sourceTree = "<group>"; };
+		38934A6F0F2509EA005EACDC /* ASGetInfoCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGetInfoCommand.m; sourceTree = "<group>"; };
+		38A0195A0F0E68F400CEADED /* ASCM11AController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCM11AController.h; sourceTree = "<group>"; };
+		38A0195B0F0E68F400CEADED /* ASCM11AController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCM11AController.m; sourceTree = "<group>"; };
+		38AD2B42116437480043AE7E /* ASX10Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASX10Controller.h; sourceTree = "<group>"; };
+		38AD2B43116437480043AE7E /* ASX10Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASX10Controller.m; sourceTree = "<group>"; };
+		38AD2D041166F5440043AE7E /* ASPowerLinc1132Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPowerLinc1132Controller.h; sourceTree = "<group>"; };
+		38AD2D051166F5440043AE7E /* ASPowerLinc1132Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPowerLinc1132Controller.m; sourceTree = "<group>"; };
+		38B5B5F51056D85000E00E4C /* ASHouseDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHouseDevice.h; sourceTree = "<group>"; };
+		38B5B5F61056D85000E00E4C /* ASHouseDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHouseDevice.m; sourceTree = "<group>"; };
+		38B5B60A1056D98B00E00E4C /* ASAllOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAllOffCommand.h; sourceTree = "<group>"; };
+		38B5B60B1056D98B00E00E4C /* ASAllOffCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAllOffCommand.m; sourceTree = "<group>"; };
+		38B5B60E1056D99C00E00E4C /* ASAllLightsOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAllLightsOffCommand.h; sourceTree = "<group>"; };
+		38B5B60F1056D99C00E00E4C /* ASAllLightsOffCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAllLightsOffCommand.m; sourceTree = "<group>"; };
+		38B5B6121056D9A800E00E4C /* ASAllLightsOnCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAllLightsOnCommand.h; sourceTree = "<group>"; };
+		38B5B6131056D9A800E00E4C /* ASAllLightsOnCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAllLightsOnCommand.m; sourceTree = "<group>"; };
+		38BF520610BB316600AD1DA7 /* ASSprinklerDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerDevice.h; sourceTree = "<group>"; };
+		38BF520710BB316600AD1DA7 /* ASSprinklerDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerDevice.m; sourceTree = "<group>"; };
+		38BF522B10BB32B200AD1DA7 /* ASSprinklerOnCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerOnCommand.h; sourceTree = "<group>"; };
+		38BF522C10BB32B200AD1DA7 /* ASSprinklerOnCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerOnCommand.m; sourceTree = "<group>"; };
+		38BF522F10BB32F900AD1DA7 /* ASSprinklerOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSprinklerOffCommand.h; sourceTree = "<group>"; };
+		38BF523010BB32F900AD1DA7 /* ASSprinklerOffCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSprinklerOffCommand.m; sourceTree = "<group>"; };
+		38C3ADA71129E47D00AD4574 /* ASEzSrveWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEzSrveWebController.h; sourceTree = "<group>"; };
+		38C3ADA81129E47D00AD4574 /* ASEzSrveWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEzSrveWebController.m; sourceTree = "<group>"; };
+		38C88A40111CFCA7003A67CE /* ASSerialPortModemDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSerialPortModemDevice.h; sourceTree = "<group>"; };
+		38C88A41111CFCA7003A67CE /* ASSerialPortModemDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSerialPortModemDevice.m; sourceTree = "<group>"; };
+		38C88A45111CFCE2003A67CE /* ASSerialPortAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSerialPortAddress.h; sourceTree = "<group>"; };
+		38C88A46111CFCE2003A67CE /* ASSerialPortAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSerialPortAddress.m; sourceTree = "<group>"; };
+		38CA729C105443E5004DE49F /* ASEnableStatusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEnableStatusCommand.h; sourceTree = "<group>"; };
+		38CA729D105443E5004DE49F /* ASEnableStatusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEnableStatusCommand.m; sourceTree = "<group>"; };
+		38CA72A010544416004DE49F /* ASDisableStatusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDisableStatusCommand.h; sourceTree = "<group>"; };
+		38CA72A110544416004DE49F /* ASDisableStatusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDisableStatusCommand.m; sourceTree = "<group>"; };
+		38DDEED00EFAF311006556FF /* ASGetTemperatureCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGetTemperatureCommand.h; sourceTree = "<group>"; };
+		38DDEED10EFAF311006556FF /* ASGetTemperatureCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGetTemperatureCommand.m; sourceTree = "<group>"; };
+		38DDEED40EFAF34A006556FF /* ASGetThermostatModeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGetThermostatModeCommand.h; sourceTree = "<group>"; };
+		38DDEED50EFAF34A006556FF /* ASGetThermostatModeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGetThermostatModeCommand.m; sourceTree = "<group>"; };
+		38DDEED80EFAF379006556FF /* ASSetThermostatModeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSetThermostatModeCommand.h; sourceTree = "<group>"; };
+		38DDEED90EFAF379006556FF /* ASSetThermostatModeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSetThermostatModeCommand.m; sourceTree = "<group>"; };
+		38DDEEE40EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASActivateThermostatStatusBroadcastCommand.h; sourceTree = "<group>"; };
+		38DDEEE50EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASActivateThermostatStatusBroadcastCommand.m; sourceTree = "<group>"; };
+		38DDEEE80EFAF41B006556FF /* ASSetCoolPointCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSetCoolPointCommand.h; sourceTree = "<group>"; };
+		38DDEEE90EFAF41B006556FF /* ASSetCoolPointCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSetCoolPointCommand.m; sourceTree = "<group>"; };
+		38DDEEEC0EFAF42E006556FF /* ASSetHeatPointCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSetHeatPointCommand.h; sourceTree = "<group>"; };
+		38DDEEED0EFAF42E006556FF /* ASSetHeatPointCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSetHeatPointCommand.m; sourceTree = "<group>"; };
+		38DDF1460EFB0D2F006556FF /* ASGetThermostatState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGetThermostatState.h; sourceTree = "<group>"; };
+		38DDF1470EFB0D2F006556FF /* ASGetThermostatState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGetThermostatState.m; sourceTree = "<group>"; };
+		38FFC38B0EF2C9A5006F17B5 /* ASInsteonDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASInsteonDatabase.h; sourceTree = "<group>"; };
+		38FFC38C0EF2C9A5006F17B5 /* ASInsteonDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASInsteonDatabase.m; sourceTree = "<group>"; };
+		38FFC4E50EF31183006F17B5 /* ASX10Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASX10Address.h; sourceTree = "<group>"; };
+		38FFC4E60EF31183006F17B5 /* ASX10Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASX10Address.m; sourceTree = "<group>"; };
+		38FFC53B0EF31733006F17B5 /* ASAggregateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAggregateCommand.h; sourceTree = "<group>"; };
+		38FFC53C0EF31733006F17B5 /* ASAggregateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAggregateCommand.m; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* Shion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		382619990EEEEC9800E78669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38261B1B0EEF01A400E78669 /* Shion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				38261D750EEF37F800E78669 /* Carbon.framework in Frameworks */,
+				38261D760EEF37F800E78669 /* IOKit.framework in Frameworks */,
+				38261D770EEF37F800E78669 /* System.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* Shion.framework */,
+				3826199C0EEEEC9800E78669 /* ShionUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Shion Framework */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				3826199D0EEEEC9800E78669 /* ShionUnitTests-Info.plist */,
+			);
+			name = "Shion Framework";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				388EEC500F40BCD00009CC7B /* Utility */,
+				382619A80EEEED2C00E78669 /* Hardware */,
+				3826196C0EEEEBF000E78669 /* Testing */,
+				382619650EEEEA4400E78669 /* Commands */,
+				38831B230EEED764006561A2 /* Devices */,
+				3826195C0EEEDFF200E78669 /* Device Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38261D720EEF37F800E78669 /* Carbon.framework */,
+				38261D730EEF37F800E78669 /* IOKit.framework */,
+				38261D740EEF37F800E78669 /* System.framework */,
+				382619CD0EEEF11200E78669 /* SenTestingKit.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				380B405E1129FF9E000E948D /* Third Party Code */,
+				32DBCF5E0370ADEE00C91783 /* Shion Framework_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		380B405E1129FF9E000E948D /* Third Party Code */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Third Party Code";
+			sourceTree = "<group>";
+		};
+		382618F70EEED8A900E78669 /* Addresses */ = {
+			isa = PBXGroup;
+			children = (
+				382618FC0EEED8DD00E78669 /* ASAddress.h */,
+				382618FD0EEED8DD00E78669 /* ASAddress.m */,
+			);
+			name = Addresses;
+			sourceTree = "<group>";
+		};
+		3826195C0EEEDFF200E78669 /* Device Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				382619610EEEE01C00E78669 /* ASDeviceController.h */,
+				382619620EEEE01C00E78669 /* ASDeviceController.m */,
+			);
+			name = "Device Controllers";
+			sourceTree = "<group>";
+		};
+		382619650EEEEA4400E78669 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				3890CA7513C5473D00ECC913 /* Lock Commands */,
+				38BF522910BB32A500AD1DA7 /* Sprinkler Commands */,
+				38CA7299105443B4004DE49F /* Status Commands */,
+				382DC39C101B87BF001E6A7A /* Misc. Commands */,
+				38DDEECB0EFAF2C1006556FF /* HVAC Commands */,
+				38DDEECA0EFAF2AE006556FF /* Light Commands */,
+				38261B270EEF044200E78669 /* ASCommands.h */,
+				382619660EEEEA4F00E78669 /* ASCommand.h */,
+				382619670EEEEA4F00E78669 /* ASCommand.m */,
+				38FFC53B0EF31733006F17B5 /* ASAggregateCommand.h */,
+				38FFC53C0EF31733006F17B5 /* ASAggregateCommand.m */,
+				38934A6E0F2509EA005EACDC /* ASGetInfoCommand.h */,
+				38934A6F0F2509EA005EACDC /* ASGetInfoCommand.m */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		3826196C0EEEEBF000E78669 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				382619B20EEEEDBB00E78669 /* ASVirtualDevicesTest.h */,
+				382619B30EEEEDBB00E78669 /* ASVirtualDevicesTest.m */,
+			);
+			name = Testing;
+			sourceTree = "<group>";
+		};
+		382619A80EEEED2C00E78669 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				38C88A44111CFCCB003A67CE /* Serial Port */,
+				38FFC4E40EF3116E006F17B5 /* X10 */,
+				38261C140EEF1E4800E78669 /* Insteon */,
+				382619A90EEEED3400E78669 /* Virtual Hardware */,
+			);
+			name = Hardware;
+			sourceTree = "<group>";
+		};
+		382619A90EEEED3400E78669 /* Virtual Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				382619C20EEEF08A00E78669 /* ASVirtualDeviceController.h */,
+				382619C30EEEF08A00E78669 /* ASVirtualDeviceController.m */,
+				38261A950EEEFA4B00E78669 /* ASVirtualAddress.h */,
+				38261A960EEEFA4B00E78669 /* ASVirtualAddress.m */,
+			);
+			name = "Virtual Hardware";
+			sourceTree = "<group>";
+		};
+		38261C140EEF1E4800E78669 /* Insteon */ = {
+			isa = PBXGroup;
+			children = (
+				382C488C115E526A0086208F /* Misc Controllers */,
+				382C4887115E52170086208F /* PowerLinc Controllers */,
+				38261C190EEF1EAA00E78669 /* ASInsteonAddress.h */,
+				38261C1A0EEF1EAA00E78669 /* ASInsteonAddress.m */,
+				38FFC38B0EF2C9A5006F17B5 /* ASInsteonDatabase.h */,
+				38FFC38C0EF2C9A5006F17B5 /* ASInsteonDatabase.m */,
+				38261D150EEF2DD500E78669 /* ASInsteonTransmitCommand.h */,
+				38261D160EEF2DD500E78669 /* ASInsteonTransmitCommand.m */,
+			);
+			name = Insteon;
+			sourceTree = "<group>";
+		};
+		382C4887115E52170086208F /* PowerLinc Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3830AB70113081860022B652 /* ASPowerLincController.h */,
+				3830AB71113081860022B652 /* ASPowerLincController.m */,
+				386994FE112F2886005D0050 /* ASPowerLinc2412Controller.h */,
+				386994FF112F2886005D0050 /* ASPowerLinc2412Controller.m */,
+				38261C150EEF1E8100E78669 /* ASPowerLinc2414Controller.h */,
+				38261C160EEF1E8100E78669 /* ASPowerLinc2414Controller.m */,
+			);
+			name = "PowerLinc Controllers";
+			sourceTree = "<group>";
+		};
+		382C488C115E526A0086208F /* Misc Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38397E71111B31E000728CCA /* ASSmartLincWebController.h */,
+				38397E72111B31E000728CCA /* ASSmartLincWebController.m */,
+				38C3ADA71129E47D00AD4574 /* ASEzSrveWebController.h */,
+				38C3ADA81129E47D00AD4574 /* ASEzSrveWebController.m */,
+				380C0E0E12ECDFAC00752A96 /* ASSmartLincDirectController.h */,
+				380C0E0F12ECDFAC00752A96 /* ASSmartLincDirectController.m */,
+			);
+			name = "Misc Controllers";
+			sourceTree = "<group>";
+		};
+		382DC39C101B87BF001E6A7A /* Misc. Commands */ = {
+			isa = PBXGroup;
+			children = (
+				382DC39D101B87CA001E6A7A /* ASChimeCommand.h */,
+				382DC39E101B87CA001E6A7A /* ASChimeCommand.m */,
+				3890C98F13C2C35000ECC913 /* ASResetPowerMeterCommand.h */,
+				3890C99013C2C35000ECC913 /* ASResetPowerMeterCommand.m */,
+				384A4BC214409B8200F9CB6B /* ASGarageHawkClose.h */,
+				384A4BC314409B8200F9CB6B /* ASGarageHawkClose.m */,
+			);
+			name = "Misc. Commands";
+			sourceTree = "<group>";
+		};
+		38831B230EEED764006561A2 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				382618F70EEED8A900E78669 /* Addresses */,
+				38831B260EEED76F006561A2 /* ASDevice.h */,
+				38831B270EEED76F006561A2 /* ASDevice.m */,
+				382619100EEEDE8600E78669 /* ASToggleDevice.h */,
+				382619110EEEDE8600E78669 /* ASToggleDevice.m */,
+				382619140EEEDE9C00E78669 /* ASContinuousDevice.h */,
+				382619150EEEDE9C00E78669 /* ASContinuousDevice.m */,
+				387BFE2B0EF962300035581F /* ASThermostatDevice.h */,
+				387BFE2C0EF962300035581F /* ASThermostatDevice.m */,
+				382DC398101B879C001E6A7A /* ASChimeDevice.h */,
+				382DC399101B879C001E6A7A /* ASChimeDevice.m */,
+				382DC6AC101CC19C001E6A7A /* ASMotionDetector.h */,
+				382DC6AD101CC19C001E6A7A /* ASMotionDetector.m */,
+				38B5B5F51056D85000E00E4C /* ASHouseDevice.h */,
+				38B5B5F61056D85000E00E4C /* ASHouseDevice.m */,
+				38BF520610BB316600AD1DA7 /* ASSprinklerDevice.h */,
+				38BF520710BB316600AD1DA7 /* ASSprinklerDevice.m */,
+				3890C80313C2948C00ECC913 /* ASPowerMeterDevice.h */,
+				3890C80413C2948C00ECC913 /* ASPowerMeterDevice.m */,
+				3890CA7013C5471100ECC913 /* ASLockDevice.h */,
+				3890CA7113C5471100ECC913 /* ASLockDevice.m */,
+				384A4BC814409CCC00F9CB6B /* ASGarageHawkDevice.h */,
+				384A4BC914409CCC00F9CB6B /* ASGarageHawkDevice.m */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		388EEC500F40BCD00009CC7B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				388EEC510F40BCDE0009CC7B /* ShionLog.h */,
+				388EEC520F40BCDE0009CC7B /* ShionLog.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		3890CA7513C5473D00ECC913 /* Lock Commands */ = {
+			isa = PBXGroup;
+			children = (
+				3890CA7613C5474900ECC913 /* ASLockCommand.h */,
+				3890CA7713C5474900ECC913 /* ASLockCommand.m */,
+				3890CA7A13C5475F00ECC913 /* ASUnlockCommand.h */,
+				3890CA7B13C5475F00ECC913 /* ASUnlockCommand.m */,
+			);
+			name = "Lock Commands";
+			sourceTree = "<group>";
+		};
+		38BF522910BB32A500AD1DA7 /* Sprinkler Commands */ = {
+			isa = PBXGroup;
+			children = (
+				38BF522B10BB32B200AD1DA7 /* ASSprinklerOnCommand.h */,
+				38BF522C10BB32B200AD1DA7 /* ASSprinklerOnCommand.m */,
+				38BF522F10BB32F900AD1DA7 /* ASSprinklerOffCommand.h */,
+				38BF523010BB32F900AD1DA7 /* ASSprinklerOffCommand.m */,
+				38398017111C71C500728CCA /* ASSprinklerValveStatusCommand.h */,
+				38398018111C71C500728CCA /* ASSprinklerValveStatusCommand.m */,
+				3839802C111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.h */,
+				3839802D111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.m */,
+				383980D0111C98E800728CCA /* ASSprinklerSetConfigurationCommand.h */,
+				383980D1111C98E800728CCA /* ASSprinklerSetConfigurationCommand.m */,
+				383980D8111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.h */,
+				383980D9111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.m */,
+				383980DE111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.h */,
+				383980DF111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.m */,
+				383980E2111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.h */,
+				383980E3111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.m */,
+			);
+			name = "Sprinkler Commands";
+			sourceTree = "<group>";
+		};
+		38C88A44111CFCCB003A67CE /* Serial Port */ = {
+			isa = PBXGroup;
+			children = (
+				38C88A45111CFCE2003A67CE /* ASSerialPortAddress.h */,
+				38C88A46111CFCE2003A67CE /* ASSerialPortAddress.m */,
+				38C88A40111CFCA7003A67CE /* ASSerialPortModemDevice.h */,
+				38C88A41111CFCA7003A67CE /* ASSerialPortModemDevice.m */,
+			);
+			name = "Serial Port";
+			sourceTree = "<group>";
+		};
+		38CA7299105443B4004DE49F /* Status Commands */ = {
+			isa = PBXGroup;
+			children = (
+				38261AFA0EEF009300E78669 /* ASStatusCommand.h */,
+				38261AFB0EEF009300E78669 /* ASStatusCommand.m */,
+				38CA729C105443E5004DE49F /* ASEnableStatusCommand.h */,
+				38CA729D105443E5004DE49F /* ASEnableStatusCommand.m */,
+				38CA72A010544416004DE49F /* ASDisableStatusCommand.h */,
+				38CA72A110544416004DE49F /* ASDisableStatusCommand.m */,
+			);
+			name = "Status Commands";
+			sourceTree = "<group>";
+		};
+		38DDEECA0EFAF2AE006556FF /* Light Commands */ = {
+			isa = PBXGroup;
+			children = (
+				38261AFE0EEF00A100E78669 /* ASActivateCommand.h */,
+				38261AFF0EEF00A100E78669 /* ASActivateCommand.m */,
+				38261B020EEF00AF00E78669 /* ASDeactivateCommand.h */,
+				38261B030EEF00AF00E78669 /* ASDeactivateCommand.m */,
+				38261B060EEF00C400E78669 /* ASIncreaseCommand.h */,
+				38261B070EEF00C400E78669 /* ASIncreaseCommand.m */,
+				38261B0A0EEF00D100E78669 /* ASDecreaseCommand.h */,
+				38261B0B0EEF00D100E78669 /* ASDecreaseCommand.m */,
+				38261B0E0EEF00E500E78669 /* ASSetLevelCommand.h */,
+				38261B0F0EEF00E500E78669 /* ASSetLevelCommand.m */,
+				383F5327103C866800A26A9A /* ASSetRampRateCommand.h */,
+				383F5328103C866800A26A9A /* ASSetRampRateCommand.m */,
+				383F532B103C894100A26A9A /* ASGetRampRateCommand.h */,
+				383F532C103C894100A26A9A /* ASGetRampRateCommand.m */,
+				38B5B60A1056D98B00E00E4C /* ASAllOffCommand.h */,
+				38B5B60B1056D98B00E00E4C /* ASAllOffCommand.m */,
+				38B5B60E1056D99C00E00E4C /* ASAllLightsOffCommand.h */,
+				38B5B60F1056D99C00E00E4C /* ASAllLightsOffCommand.m */,
+				38B5B6121056D9A800E00E4C /* ASAllLightsOnCommand.h */,
+				38B5B6131056D9A800E00E4C /* ASAllLightsOnCommand.m */,
+			);
+			name = "Light Commands";
+			sourceTree = "<group>";
+		};
+		38DDEECB0EFAF2C1006556FF /* HVAC Commands */ = {
+			isa = PBXGroup;
+			children = (
+				38DDEED40EFAF34A006556FF /* ASGetThermostatModeCommand.h */,
+				38DDEED50EFAF34A006556FF /* ASGetThermostatModeCommand.m */,
+				38DDEED00EFAF311006556FF /* ASGetTemperatureCommand.h */,
+				38DDEED10EFAF311006556FF /* ASGetTemperatureCommand.m */,
+				38DDEED80EFAF379006556FF /* ASSetThermostatModeCommand.h */,
+				38DDEED90EFAF379006556FF /* ASSetThermostatModeCommand.m */,
+				38DDF1460EFB0D2F006556FF /* ASGetThermostatState.h */,
+				38DDF1470EFB0D2F006556FF /* ASGetThermostatState.m */,
+				38DDEEE40EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.h */,
+				38DDEEE50EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.m */,
+				38322E930F0AAFF800D72D6A /* ASGetCoolPointCommand.h */,
+				38322E940F0AAFF800D72D6A /* ASGetCoolPointCommand.m */,
+				38322E970F0AB00400D72D6A /* ASGetHeatPointCommand.h */,
+				38322E980F0AB00400D72D6A /* ASGetHeatPointCommand.m */,
+				38DDEEE80EFAF41B006556FF /* ASSetCoolPointCommand.h */,
+				38DDEEE90EFAF41B006556FF /* ASSetCoolPointCommand.m */,
+				38DDEEEC0EFAF42E006556FF /* ASSetHeatPointCommand.h */,
+				38DDEEED0EFAF42E006556FF /* ASSetHeatPointCommand.m */,
+				388D2BB80FBF257B004C5CFB /* ASActivateFanCommand.h */,
+				388D2BB90FBF257B004C5CFB /* ASActivateFanCommand.m */,
+				388D2BBC0FBF258A004C5CFB /* ASDeactivateFanCommand.h */,
+				388D2BBD0FBF258A004C5CFB /* ASDeactivateFanCommand.m */,
+			);
+			name = "HVAC Commands";
+			sourceTree = "<group>";
+		};
+		38FFC4E40EF3116E006F17B5 /* X10 */ = {
+			isa = PBXGroup;
+			children = (
+				38FFC4E50EF31183006F17B5 /* ASX10Address.h */,
+				38FFC4E60EF31183006F17B5 /* ASX10Address.m */,
+				383232B50F0D51DA00D72D6A /* ASCM15AUSBController.h */,
+				383232B60F0D51DA00D72D6A /* ASCM15AUSBController.m */,
+				38A0195A0F0E68F400CEADED /* ASCM11AController.h */,
+				38A0195B0F0E68F400CEADED /* ASCM11AController.m */,
+				38AD2B42116437480043AE7E /* ASX10Controller.h */,
+				38AD2B43116437480043AE7E /* ASX10Controller.m */,
+				38AD2D041166F5440043AE7E /* ASPowerLinc1132Controller.h */,
+				38AD2D051166F5440043AE7E /* ASPowerLinc1132Controller.m */,
+				380BE4DA1275F9DB0083E78C /* ASCM17AController.h */,
+				380BE4DB1275F9DB0083E78C /* ASCM17AController.m */,
+			);
+			name = X10;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38831B280EEED76F006561A2 /* ASDevice.h in Headers */,
+				382618FE0EEED8DD00E78669 /* ASAddress.h in Headers */,
+				382619120EEEDE8600E78669 /* ASToggleDevice.h in Headers */,
+				382619160EEEDE9C00E78669 /* ASContinuousDevice.h in Headers */,
+				382619630EEEE01C00E78669 /* ASDeviceController.h in Headers */,
+				382619680EEEEA4F00E78669 /* ASCommand.h in Headers */,
+				382619B40EEEEDBB00E78669 /* ASVirtualDevicesTest.h in Headers */,
+				382619C40EEEF08A00E78669 /* ASVirtualDeviceController.h in Headers */,
+				38261A970EEEFA4B00E78669 /* ASVirtualAddress.h in Headers */,
+				38261AFC0EEF009300E78669 /* ASStatusCommand.h in Headers */,
+				38261B000EEF00A100E78669 /* ASActivateCommand.h in Headers */,
+				38261B040EEF00AF00E78669 /* ASDeactivateCommand.h in Headers */,
+				38261B080EEF00C400E78669 /* ASIncreaseCommand.h in Headers */,
+				38261B0C0EEF00D100E78669 /* ASDecreaseCommand.h in Headers */,
+				38261B100EEF00E500E78669 /* ASSetLevelCommand.h in Headers */,
+				38261B280EEF044200E78669 /* ASCommands.h in Headers */,
+				38261C170EEF1E8100E78669 /* ASPowerLinc2414Controller.h in Headers */,
+				38261C1B0EEF1EAA00E78669 /* ASInsteonAddress.h in Headers */,
+				38261D170EEF2DD500E78669 /* ASInsteonTransmitCommand.h in Headers */,
+				38FFC38D0EF2C9A5006F17B5 /* ASInsteonDatabase.h in Headers */,
+				38FFC4E70EF31183006F17B5 /* ASX10Address.h in Headers */,
+				38FFC53D0EF31733006F17B5 /* ASAggregateCommand.h in Headers */,
+				387BFE2D0EF962300035581F /* ASThermostatDevice.h in Headers */,
+				38DDEED20EFAF311006556FF /* ASGetTemperatureCommand.h in Headers */,
+				38DDEED60EFAF34A006556FF /* ASGetThermostatModeCommand.h in Headers */,
+				38DDEEDA0EFAF379006556FF /* ASSetThermostatModeCommand.h in Headers */,
+				38DDEEE60EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.h in Headers */,
+				38DDEEEA0EFAF41B006556FF /* ASSetCoolPointCommand.h in Headers */,
+				38DDEEEE0EFAF42E006556FF /* ASSetHeatPointCommand.h in Headers */,
+				38DDF1480EFB0D2F006556FF /* ASGetThermostatState.h in Headers */,
+				38322E950F0AAFF800D72D6A /* ASGetCoolPointCommand.h in Headers */,
+				38322E990F0AB00400D72D6A /* ASGetHeatPointCommand.h in Headers */,
+				383232B70F0D51DA00D72D6A /* ASCM15AUSBController.h in Headers */,
+				38A0195C0F0E68F400CEADED /* ASCM11AController.h in Headers */,
+				38934A700F2509EA005EACDC /* ASGetInfoCommand.h in Headers */,
+				388EEC530F40BCDE0009CC7B /* ShionLog.h in Headers */,
+				388D2BBA0FBF257B004C5CFB /* ASActivateFanCommand.h in Headers */,
+				388D2BBE0FBF258A004C5CFB /* ASDeactivateFanCommand.h in Headers */,
+				382DC39A101B879C001E6A7A /* ASChimeDevice.h in Headers */,
+				382DC39F101B87CA001E6A7A /* ASChimeCommand.h in Headers */,
+				382DC6AE101CC19C001E6A7A /* ASMotionDetector.h in Headers */,
+				383F5329103C866800A26A9A /* ASSetRampRateCommand.h in Headers */,
+				383F532D103C894100A26A9A /* ASGetRampRateCommand.h in Headers */,
+				38CA729E105443E5004DE49F /* ASEnableStatusCommand.h in Headers */,
+				38CA72A210544416004DE49F /* ASDisableStatusCommand.h in Headers */,
+				38B5B5F71056D85000E00E4C /* ASHouseDevice.h in Headers */,
+				38B5B60C1056D98B00E00E4C /* ASAllOffCommand.h in Headers */,
+				38B5B6101056D99C00E00E4C /* ASAllLightsOffCommand.h in Headers */,
+				38B5B6141056D9A800E00E4C /* ASAllLightsOnCommand.h in Headers */,
+				38BF520810BB316600AD1DA7 /* ASSprinklerDevice.h in Headers */,
+				38BF522D10BB32B200AD1DA7 /* ASSprinklerOnCommand.h in Headers */,
+				38BF523110BB32F900AD1DA7 /* ASSprinklerOffCommand.h in Headers */,
+				38397E73111B31E000728CCA /* ASSmartLincWebController.h in Headers */,
+				38398019111C71C500728CCA /* ASSprinklerValveStatusCommand.h in Headers */,
+				3839802E111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.h in Headers */,
+				383980D2111C98E800728CCA /* ASSprinklerSetConfigurationCommand.h in Headers */,
+				383980DA111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.h in Headers */,
+				383980E0111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.h in Headers */,
+				383980E4111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.h in Headers */,
+				38C88A42111CFCA7003A67CE /* ASSerialPortModemDevice.h in Headers */,
+				38C88A47111CFCE2003A67CE /* ASSerialPortAddress.h in Headers */,
+				38C3ADA91129E47D00AD4574 /* ASEzSrveWebController.h in Headers */,
+				38699500112F2886005D0050 /* ASPowerLinc2412Controller.h in Headers */,
+				3830AB72113081860022B652 /* ASPowerLincController.h in Headers */,
+				38AD2B44116437480043AE7E /* ASX10Controller.h in Headers */,
+				38AD2D061166F5440043AE7E /* ASPowerLinc1132Controller.h in Headers */,
+				380BE4DC1275F9DB0083E78C /* ASCM17AController.h in Headers */,
+				380C0E1012ECDFAC00752A96 /* ASSmartLincDirectController.h in Headers */,
+				3890C80513C2948C00ECC913 /* ASPowerMeterDevice.h in Headers */,
+				3890C99113C2C35000ECC913 /* ASResetPowerMeterCommand.h in Headers */,
+				3890CA7213C5471100ECC913 /* ASLockDevice.h in Headers */,
+				3890CA7813C5474900ECC913 /* ASLockCommand.h in Headers */,
+				3890CA7C13C5475F00ECC913 /* ASUnlockCommand.h in Headers */,
+				384A4BC414409B8200F9CB6B /* ASGarageHawkClose.h in Headers */,
+				384A4BCA14409CCC00F9CB6B /* ASGarageHawkDevice.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3826199B0EEEEC9800E78669 /* ShionUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 382619A00EEEEC9900E78669 /* Build configuration list for PBXNativeTarget "ShionUnitTests" */;
+			buildPhases = (
+				382619970EEEEC9800E78669 /* Resources */,
+				382619980EEEEC9800E78669 /* Sources */,
+				382619990EEEEC9800E78669 /* Frameworks */,
+				3826199A0EEEEC9800E78669 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				382619A20EEEECAA00E78669 /* PBXTargetDependency */,
+			);
+			name = ShionUnitTests;
+			productName = ShionUnitTests;
+			productReference = 3826199C0EEEEC9800E78669 /* ShionUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8DC2EF4F0486A6940098B216 /* Shion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Shion" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shion;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = "Shion Framework";
+			productReference = 8DC2EF5B0486A6940098B216 /* Shion.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Shion Framework" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Shion Framework */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* Shion */,
+				3826199B0EEEEC9800E78669 /* ShionUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		382619970EEEEC9800E78669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3826199A0EEEEC9800E78669 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		382619980EEEEC9800E78669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38261A760EEEF85300E78669 /* ASVirtualDevicesTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38261A980EEEFA4B00E78669 /* ASVirtualAddress.m in Sources */,
+				38831B290EEED76F006561A2 /* ASDevice.m in Sources */,
+				382618FF0EEED8DD00E78669 /* ASAddress.m in Sources */,
+				382619130EEEDE8600E78669 /* ASToggleDevice.m in Sources */,
+				382619170EEEDE9C00E78669 /* ASContinuousDevice.m in Sources */,
+				382619640EEEE01C00E78669 /* ASDeviceController.m in Sources */,
+				382619690EEEEA4F00E78669 /* ASCommand.m in Sources */,
+				382619C50EEEF08A00E78669 /* ASVirtualDeviceController.m in Sources */,
+				38261AFD0EEF009300E78669 /* ASStatusCommand.m in Sources */,
+				38261B010EEF00A100E78669 /* ASActivateCommand.m in Sources */,
+				38261B050EEF00AF00E78669 /* ASDeactivateCommand.m in Sources */,
+				38261B090EEF00C400E78669 /* ASIncreaseCommand.m in Sources */,
+				38261B0D0EEF00D100E78669 /* ASDecreaseCommand.m in Sources */,
+				38261B110EEF00E500E78669 /* ASSetLevelCommand.m in Sources */,
+				38261C180EEF1E8100E78669 /* ASPowerLinc2414Controller.m in Sources */,
+				38261D180EEF2DD500E78669 /* ASInsteonTransmitCommand.m in Sources */,
+				38FFC38E0EF2C9A5006F17B5 /* ASInsteonDatabase.m in Sources */,
+				38FFC4E80EF31183006F17B5 /* ASX10Address.m in Sources */,
+				38FFC4EF0EF3139A006F17B5 /* ASInsteonAddress.m in Sources */,
+				38FFC53E0EF31733006F17B5 /* ASAggregateCommand.m in Sources */,
+				387BFE2E0EF962300035581F /* ASThermostatDevice.m in Sources */,
+				38DDEED30EFAF311006556FF /* ASGetTemperatureCommand.m in Sources */,
+				38DDEED70EFAF34A006556FF /* ASGetThermostatModeCommand.m in Sources */,
+				38DDEEDB0EFAF379006556FF /* ASSetThermostatModeCommand.m in Sources */,
+				38DDEEE70EFAF403006556FF /* ASActivateThermostatStatusBroadcastCommand.m in Sources */,
+				38DDEEEB0EFAF41B006556FF /* ASSetCoolPointCommand.m in Sources */,
+				38DDEEEF0EFAF42E006556FF /* ASSetHeatPointCommand.m in Sources */,
+				38DDF1490EFB0D2F006556FF /* ASGetThermostatState.m in Sources */,
+				38322E960F0AAFF800D72D6A /* ASGetCoolPointCommand.m in Sources */,
+				38322E9A0F0AB00400D72D6A /* ASGetHeatPointCommand.m in Sources */,
+				383232B80F0D51DA00D72D6A /* ASCM15AUSBController.m in Sources */,
+				38A0195D0F0E68F400CEADED /* ASCM11AController.m in Sources */,
+				38934A710F2509EA005EACDC /* ASGetInfoCommand.m in Sources */,
+				388EEC540F40BCDE0009CC7B /* ShionLog.m in Sources */,
+				388D2BBB0FBF257B004C5CFB /* ASActivateFanCommand.m in Sources */,
+				388D2BBF0FBF258A004C5CFB /* ASDeactivateFanCommand.m in Sources */,
+				382DC39B101B879C001E6A7A /* ASChimeDevice.m in Sources */,
+				382DC3A0101B87CA001E6A7A /* ASChimeCommand.m in Sources */,
+				382DC6AF101CC19C001E6A7A /* ASMotionDetector.m in Sources */,
+				383F532A103C866800A26A9A /* ASSetRampRateCommand.m in Sources */,
+				383F532E103C894100A26A9A /* ASGetRampRateCommand.m in Sources */,
+				38CA729F105443E5004DE49F /* ASEnableStatusCommand.m in Sources */,
+				38CA72A310544416004DE49F /* ASDisableStatusCommand.m in Sources */,
+				38B5B5F81056D85000E00E4C /* ASHouseDevice.m in Sources */,
+				38B5B60D1056D98B00E00E4C /* ASAllOffCommand.m in Sources */,
+				38B5B6111056D99C00E00E4C /* ASAllLightsOffCommand.m in Sources */,
+				38B5B6151056D9A800E00E4C /* ASAllLightsOnCommand.m in Sources */,
+				38BF520910BB316600AD1DA7 /* ASSprinklerDevice.m in Sources */,
+				38BF522E10BB32B200AD1DA7 /* ASSprinklerOnCommand.m in Sources */,
+				38BF523210BB32F900AD1DA7 /* ASSprinklerOffCommand.m in Sources */,
+				38397E74111B31E000728CCA /* ASSmartLincWebController.m in Sources */,
+				3839801A111C71C500728CCA /* ASSprinklerValveStatusCommand.m in Sources */,
+				3839802F111C7B7B00728CCA /* ASSprinklerFetchConfigurationCommand.m in Sources */,
+				383980D3111C98E800728CCA /* ASSprinklerSetConfigurationCommand.m in Sources */,
+				383980DB111C9A0400728CCA /* ASSprinklerSetDiagnosticsConfiguration.m in Sources */,
+				383980E1111C9A2E00728CCA /* ASSprinklerSetPumpConfigurationCommand.m in Sources */,
+				383980E5111C9A4300728CCA /* ASSprinklerSetRainSensorConfigurationCommand.m in Sources */,
+				38C88A43111CFCA7003A67CE /* ASSerialPortModemDevice.m in Sources */,
+				38C88A48111CFCE2003A67CE /* ASSerialPortAddress.m in Sources */,
+				38C3ADAA1129E47E00AD4574 /* ASEzSrveWebController.m in Sources */,
+				38699501112F2886005D0050 /* ASPowerLinc2412Controller.m in Sources */,
+				3830AB73113081860022B652 /* ASPowerLincController.m in Sources */,
+				38AD2B45116437480043AE7E /* ASX10Controller.m in Sources */,
+				38AD2D071166F5440043AE7E /* ASPowerLinc1132Controller.m in Sources */,
+				380BE4DD1275F9DB0083E78C /* ASCM17AController.m in Sources */,
+				380C0E1112ECDFAC00752A96 /* ASSmartLincDirectController.m in Sources */,
+				3890C80613C2948C00ECC913 /* ASPowerMeterDevice.m in Sources */,
+				3890C99213C2C35000ECC913 /* ASResetPowerMeterCommand.m in Sources */,
+				3890CA7313C5471100ECC913 /* ASLockDevice.m in Sources */,
+				3890CA7913C5474900ECC913 /* ASLockCommand.m in Sources */,
+				3890CA7D13C5475F00ECC913 /* ASUnlockCommand.m in Sources */,
+				384A4BC514409B8200F9CB6B /* ASGarageHawkClose.m in Sources */,
+				384A4BCB14409CCC00F9CB6B /* ASGarageHawkDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		382619A20EEEECAA00E78669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* Shion */;
+			targetProxy = 382619A10EEEECAA00E78669 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shion Framework_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/Shion.framework/Shion";
+				PRODUCT_NAME = Shion;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shion Framework_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "";
+				PRODUCT_NAME = Shion;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.4;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/Shion.framework/Shion";
+				SDKROOT = macosx10.4;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970";
+			};
+			name = Release;
+		};
+		3826199E0EEEEC9800E78669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "ShionUnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ShionUnitTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3826199F0EEEEC9800E78669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "ShionUnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ShionUnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Shion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Shion Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		382619A00EEEEC9900E78669 /* Build configuration list for PBXNativeTarget "ShionUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3826199E0EEEEC9800E78669 /* Debug */,
+				3826199F0EEEEC9800E78669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

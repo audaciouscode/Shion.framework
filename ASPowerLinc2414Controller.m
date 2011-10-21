@@ -347,7 +347,10 @@ BOOL processResponse (NSMutableData * response)
 					ShionLog (@"Misaligned %d bytes", i);
 					ShionLog (@"response buffer: %@", [controller stringForData:response]);
 					
-					[response replaceBytesInRange:NSMakeRange(0, i) withBytes:NULL length:0];
+					if (bytes[i+1] == 0x15)
+						[response replaceBytesInRange:NSMakeRange(0, i + 1) withBytes:NULL length:0];
+					else
+						[response replaceBytesInRange:NSMakeRange(0, i) withBytes:NULL length:0];
 					
 					return processResponse(response);
 				}
@@ -564,7 +567,7 @@ static void callback2414 (void * target, IOReturn result, void * o, void * p)
 			
 			currentCommand = [[commandQueue objectAtIndex:0] retain];
 			[commandQueue removeObjectAtIndex:0];
-			
+
 			if ([currentCommand isMemberOfClass:[ASAggregateCommand class]])
 			{
 				NSArray * commands = [((ASAggregateCommand *) currentCommand) commands];
@@ -596,6 +599,8 @@ static void callback2414 (void * target, IOReturn result, void * o, void * p)
 				
 				NSData * commandData = (NSData *) [currentCommand valueForKey:COMMAND_BYTES];
 				
+				ShionLog(@"commandData = %@", commandData);
+
 				if (commandData != nil)
 				{
 					unsigned char * bytes = (unsigned char *) [commandData bytes];
@@ -668,15 +673,25 @@ static void callback2414 (void * target, IOReturn result, void * o, void * p)
 		[command setValue:commandBytes forKey:COMMAND_BYTES];
 		[command setValue:[NSNumber numberWithBool:YES] forKey:NEEDS_TRANSMIT];
 	}
+	else if ([deviceAddress isMemberOfClass:[ASX10Address class]])
+	{
+		if (commandKind == AS_SET_LEVEL)
+		{
+			if ([((NSNumber *) value) intValue] == 0)
+				return [self commandForDevice:device kind:AS_DEACTIVATE];
+			else
+				return [self commandForDevice:device kind:AS_ACTIVATE];
+		}
+	}
 	
 	return command;
 }
 
 - (ASCommand *) commandForDevice:(ASDevice *) device kind:(unsigned int) commandKind
 {
-	ASCommand * command = nil;
-	
 	ASAddress * deviceAddress = [device getAddress];
+
+	ASCommand * command = nil;
 	
 	if ([deviceAddress isMemberOfClass:[ASInsteonAddress class]])
 	{
@@ -698,7 +713,7 @@ static void callback2414 (void * target, IOReturn result, void * o, void * p)
 		unsigned char commandByte = [self xtenCommandByteForDevice:device command:command];
 		
 		unsigned char code = [((ASX10Address *) [device getAddress]) getAddressByte];
-		
+
 		currentX10Address = code;
 		
 		ASAggregateCommand * aggCommand = [[[ASAggregateCommand alloc] init] autorelease];

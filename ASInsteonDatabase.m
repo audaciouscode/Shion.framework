@@ -50,9 +50,11 @@
 
 + (NSString *) stringForDeviceType:(NSData *) type
 {
-	if ([type length] == 2)
+	unsigned char * bytes = (unsigned char *) [type bytes];
+
+	/*	if ([type length] == 2)
 	{
-		unsigned char * bytes = (unsigned char *) [type bytes];
+	 unsigned char * bytes = (unsigned char *) [type bytes];
 		
 		if (bytes[0] == 0x03)
 		{
@@ -136,6 +138,33 @@
 				return @"GarageHawk Remote Unit";
 		}
 		
+		return [NSString stringWithFormat:@"Unknown Device (0x%02x.0x%02x)", bytes[0], bytes[1]];
+	} */
+
+	if ([type length] == 2)
+	{
+		NSBundle * bundle = nil;
+		NSEnumerator * bundleIter = [[NSBundle allFrameworks] objectEnumerator];
+		while (bundle = [bundleIter nextObject])
+		{	
+			NSString * path = [bundle pathForResource:@"Insteon-Devices" ofType:@"plist"];
+		
+			if (path)
+			{
+				NSDictionary * dict = [NSDictionary dictionaryWithContentsOfFile:path];
+			
+				if (dict)
+				{
+					NSString * key = [[NSString stringWithFormat:@"0x%02x 0x%02x", bytes[0], bytes[1]] uppercaseString];
+					
+					NSDictionary * device = [dict valueForKey:key];
+
+					if (device)
+						return [NSString stringWithFormat:@"%@ [%@]", [device valueForKey:@"name"], [device valueForKey:@"model"]];
+				}
+			}
+		}
+
 		return [NSString stringWithFormat:@"Unknown Device (0x%02x.0x%02x)", bytes[0], bytes[1]];
 	}
 

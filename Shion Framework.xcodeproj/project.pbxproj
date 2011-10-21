@@ -85,6 +85,9 @@
 		384A4BC514409B8200F9CB6B /* ASGarageHawkClose.m in Sources */ = {isa = PBXBuildFile; fileRef = 384A4BC314409B8200F9CB6B /* ASGarageHawkClose.m */; };
 		384A4BCA14409CCC00F9CB6B /* ASGarageHawkDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 384A4BC814409CCC00F9CB6B /* ASGarageHawkDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		384A4BCB14409CCC00F9CB6B /* ASGarageHawkDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 384A4BC914409CCC00F9CB6B /* ASGarageHawkDevice.m */; };
+		385E6AA81450B9E900CBF3F3 /* ASPowerLincSerialRFController.h in Headers */ = {isa = PBXBuildFile; fileRef = 385E6AA61450B9E900CBF3F3 /* ASPowerLincSerialRFController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		385E6AA91450B9E900CBF3F3 /* ASPowerLincSerialRFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E6AA71450B9E900CBF3F3 /* ASPowerLincSerialRFController.m */; };
+		385E6B2B1450D54200CBF3F3 /* Insteon-Devices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 385E6B2A1450D54200CBF3F3 /* Insteon-Devices.plist */; };
 		38699500112F2886005D0050 /* ASPowerLinc2412Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 386994FE112F2886005D0050 /* ASPowerLinc2412Controller.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38699501112F2886005D0050 /* ASPowerLinc2412Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 386994FF112F2886005D0050 /* ASPowerLinc2412Controller.m */; };
 		387BFE2D0EF962300035581F /* ASThermostatDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 387BFE2B0EF962300035581F /* ASThermostatDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -261,6 +264,9 @@
 		384A4BC314409B8200F9CB6B /* ASGarageHawkClose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGarageHawkClose.m; sourceTree = "<group>"; };
 		384A4BC814409CCC00F9CB6B /* ASGarageHawkDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGarageHawkDevice.h; sourceTree = "<group>"; };
 		384A4BC914409CCC00F9CB6B /* ASGarageHawkDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGarageHawkDevice.m; sourceTree = "<group>"; };
+		385E6AA61450B9E900CBF3F3 /* ASPowerLincSerialRFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPowerLincSerialRFController.h; sourceTree = "<group>"; };
+		385E6AA71450B9E900CBF3F3 /* ASPowerLincSerialRFController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPowerLincSerialRFController.m; sourceTree = "<group>"; };
+		385E6B2A1450D54200CBF3F3 /* Insteon-Devices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Insteon-Devices.plist"; sourceTree = "<group>"; };
 		386994FE112F2886005D0050 /* ASPowerLinc2412Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPowerLinc2412Controller.h; sourceTree = "<group>"; };
 		386994FF112F2886005D0050 /* ASPowerLinc2412Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPowerLinc2412Controller.m; sourceTree = "<group>"; };
 		387BFE2B0EF962300035581F /* ASThermostatDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASThermostatDevice.h; sourceTree = "<group>"; };
@@ -397,6 +403,7 @@
 		089C1665FE841158C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				385E6B2A1450D54200CBF3F3 /* Insteon-Devices.plist */,
 				8DC2EF5A0486A6940098B216 /* Info.plist */,
 				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
 			);
@@ -547,6 +554,8 @@
 				386994FF112F2886005D0050 /* ASPowerLinc2412Controller.m */,
 				38261C150EEF1E8100E78669 /* ASPowerLinc2414Controller.h */,
 				38261C160EEF1E8100E78669 /* ASPowerLinc2414Controller.m */,
+				385E6AA61450B9E900CBF3F3 /* ASPowerLincSerialRFController.h */,
+				385E6AA71450B9E900CBF3F3 /* ASPowerLincSerialRFController.m */,
 			);
 			name = "PowerLinc Controllers";
 			sourceTree = "<group>";
@@ -831,6 +840,7 @@
 				3890CA7C13C5475F00ECC913 /* ASUnlockCommand.h in Headers */,
 				384A4BC414409B8200F9CB6B /* ASGarageHawkClose.h in Headers */,
 				384A4BCA14409CCC00F9CB6B /* ASGarageHawkDevice.h in Headers */,
+				385E6AA81450B9E900CBF3F3 /* ASPowerLincSerialRFController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,6 +924,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				385E6B2B1450D54200CBF3F3 /* Insteon-Devices.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,6 +1032,7 @@
 				3890CA7D13C5475F00ECC913 /* ASUnlockCommand.m in Sources */,
 				384A4BC514409B8200F9CB6B /* ASGarageHawkClose.m in Sources */,
 				384A4BCB14409CCC00F9CB6B /* ASGarageHawkDevice.m in Sources */,
+				385E6AA91450B9E900CBF3F3 /* ASPowerLincSerialRFController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

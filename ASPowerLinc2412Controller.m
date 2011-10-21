@@ -76,6 +76,36 @@ unsigned char setpoints[2];
 	[command release];
 }
 
+- (void) startAllLink
+{
+	ASStatusCommand * command = [[ASStatusCommand alloc] init];
+	
+	unsigned char bytes[] = {0x02,0x64, 0x03, 0x01};
+	
+	NSMutableData * data = [NSMutableData dataWithBytes:bytes length:4];
+	
+	[command setValue:data forKey:COMMAND_BYTES];
+	
+	[self queueCommand:command];
+	
+	[command release];
+}
+
+- (void) cancelAllLink
+{
+	ASStatusCommand * command = [[ASStatusCommand alloc] init];
+	
+	unsigned char bytes[] = {0x02,0x65};
+	
+	NSMutableData * data = [NSMutableData dataWithBytes:bytes length:2];
+	
+	[command setValue:data forKey:COMMAND_BYTES];
+	
+	[self queueCommand:command];
+	
+	[command release];
+}
+
 - (BOOL) processResponse:(NSMutableData *) response
 {
 	unsigned length = [response length];
@@ -237,7 +267,10 @@ unsigned char setpoints[2];
 					ShionLog (@"Misaligned %d bytes", i);
 					ShionLog (@"response buffer: %@", [self stringForData:response]);
 					
-					[response replaceBytesInRange:NSMakeRange(0, i) withBytes:NULL length:0];
+					if (bytes[i+1] == 0x15)
+						[response replaceBytesInRange:NSMakeRange(0, i + 1) withBytes:NULL length:0];
+					else
+						[response replaceBytesInRange:NSMakeRange(0, i) withBytes:NULL length:0];
 					
 					return [self processResponse:response];
 				}
@@ -454,8 +487,6 @@ unsigned char setpoints[2];
 	}
 }
 
-
-
 - (ASCommand *) commandForDevice: (ASDevice *)device kind:(unsigned int) commandKind value:(NSObject *) value;
 {
 	ASCommand * command = [super commandForDevice:device kind:commandKind value:value];
@@ -470,6 +501,16 @@ unsigned char setpoints[2];
 		[commandBytes appendData:[self insteonDataForDevice:device command:command value:value]];
 
 		[command setValue:commandBytes forKey:COMMAND_BYTES];
+	}
+	else if ([deviceAddress isMemberOfClass:[ASX10Address class]])
+	{
+		if (commandKind == AS_SET_LEVEL)
+		{
+			if ([((NSNumber *) value) intValue] == 0)
+				return [self commandForDevice:device kind:AS_DEACTIVATE];
+			else
+				return [self commandForDevice:device kind:AS_ACTIVATE];
+		}
 	}
 	
 	return command;

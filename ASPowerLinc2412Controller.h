@@ -28,4 +28,7 @@
 - (ASPowerLinc2412Controller *) initWithPath:(NSString *) path;
 + (ASPowerLinc2412Controller *) controllerWithPath:(NSString *) path;
 
+- (void) startAllLink;
+- (void) cancelAllLink;
+
 @end

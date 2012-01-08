@@ -21,10 +21,10 @@
 	
 	[commandQueue insertObject:currentCommand atIndex:0];
 	
-	[wakeup invalidate];
-	[wakeup release];
-	
-	wakeup = [[NSTimer scheduledTimerWithTimeInterval:5.00 target:self selector:@selector(checkQueue:) userInfo:nil repeats:YES] retain];
+//	[wakeup invalidate];
+//	[wakeup release];
+//	
+//	wakeup = [[NSTimer scheduledTimerWithTimeInterval:5.00 target:self selector:@selector(next:) userInfo:nil repeats:YES] retain];
 }
 
 - (BOOL) processResponse:(NSMutableData *) response
@@ -151,6 +151,8 @@
 				responseLength = 6;
 			else if (bytes[1] == 0x02)
 				responseLength = 1;
+			else
+				realign = YES;
 		}
 		else if (bytes[0] == 0x15)
 		{
@@ -176,22 +178,33 @@
 			
 			for (i = 0; i < length - 1; i++)
 			{
-				if ((bytes[i] == 0x02 && (bytes[i+1] >= 0x40)) || (bytes[i+1] == 0x15))
+				if ((bytes[i] == 0x02 && (bytes[i+1] >= 0x50 && bytes[i+1] <= 0x73)) || (bytes[i] == 0x15))
 				{
 					ShionLog (@"Misaligned %d bytes", i);
 					ShionLog (@"response buffer: %@", [self stringForData:response]);
+					
+					if (i == 0)
+						i = 1;
 					
 					[response replaceBytesInRange:NSMakeRange(0, i) withBytes:NULL length:0];
 					
 					return [self processResponse:response];
 				}
 			}
+			
+			[response replaceBytesInRange:NSMakeRange(0, length) withBytes:NULL length:0];
+			
+			return YES;
 		}
 	}
 	
 	if (responseLength > 0)
 	{
 		[response replaceBytesInRange:NSMakeRange(0, responseLength) withBytes:NULL length:0];
+		
+		if ([response length] > 0)
+			return [self processResponse:response];
+		
 		return YES;
 	}
 	

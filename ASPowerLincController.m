@@ -157,7 +157,7 @@
 				[userInfo setValue:STATUS_UPDATE forKey:COMMAND_TYPE];
 				
 				[userInfo setValue:[NSString stringWithFormat:@"%02x%02x%02x", bytes[0], bytes[1], bytes[2], nil] forKey:DEVICE_ADDRESS];
-				[userInfo setObject:[NSNumber numberWithUnsignedChar:0xff] forKey:DEVICE_STATE];
+				[userInfo setObject:[NSNumber numberWithUnsignedChar:bytes[8]] forKey:DEVICE_STATE];
 				
 				if (bytes[7] == 0x13)
 					[userInfo setObject:[NSNumber numberWithUnsignedChar:0x00] forKey:DEVICE_STATE];
